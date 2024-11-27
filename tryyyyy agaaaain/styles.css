@@ -1,0 +1,109 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    direction: rtl;
+    text-align: right;
+}
+
+/* Theme Colors */
+:root {
+    --primary-color: #ff6f61;
+    --secondary-color: #212529;
+    --light-color: #f8f9fa;
+    --dark-color: #333;
+}
+
+/* Header */
+.header {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.header .nav a {
+    color: var(--light-color);
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.header .nav a:hover {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: var(--light-color);
+    text-align: center;
+    padding: 100px 20px;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    border-radius: 5px;
+}
+
+/* Services and Packs */
+.services, .packs {
+    padding: 50px 20px;
+}
+
+.services .service-grid, .packs .packs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Contact Section */
+.contact {
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.contact-btn:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 15px;
+}
